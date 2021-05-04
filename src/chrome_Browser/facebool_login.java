@@ -1,7 +1,5 @@
 package chrome_Browser;
 
-import javax.swing.plaf.ActionMapUIResource;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,11 +16,11 @@ public class facebool_login
 		  driver.get("https://www.facebook.com/");
 		  
 		  WebElement username = driver.findElement(By.id("email"));
-		  username.sendKeys("Pratikohad@gmail.com");
+		  username.sendKeys("ankit.007@yahoo.com");
 		  
 		  
 		  WebElement pass = driver.findElement(By.id("pass"));
-		  pass.sendKeys("mymomlove");
+		  pass.sendKeys("mydadlove");
 		  
 		  WebElement Login = driver.findElement(By.name("login"));
 		  Login.click();
