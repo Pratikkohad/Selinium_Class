@@ -2,12 +2,15 @@ package firefox_Browser;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Login_Browser_firefox 
 {
 	public static void main(String[] args) 
 	{
 		System.setProperty("webdriver.gecko.driver", "E:\\Testing\\AUTOMATION\\geckodriver.exe");
+		 DesiredCapabilities capabilities = DesiredCapabilities.firefox();  
+         capabilities.setCapability("marionette",true); 
 		FirefoxDriver driver = new FirefoxDriver();
 		
 		String url = " https://www.google.com/";

@@ -64,10 +64,15 @@ public class Personal_Info
 		 Thread.sleep(1000);
 		 save.click();
 		 //btnSave
-
-		 WebElement nxt = driver.findElement(By.xpath("//*[@id=\"sidenav\"]/li[2]/a"));
+		 
+		 //taking link text for next path
+		 WebElement nxt = driver.findElement(By.linkText("Contact Details"));
 		 //SSN.clear();
 		 nxt.click();
+		 
+		 WebElement nxt1 = driver.findElement(By.id("welcome"));
+		 nxt1.click();
+		 //welcome
 		 
 	}
 

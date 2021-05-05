@@ -14,7 +14,7 @@ public class OrangeHRM {
 		
 		System.setProperty("webdriver.chrome.driver","E:\\Testing\\AUTOMATION\\chromedriver_win32\\chromedriver.exe");
 		 driver  =new ChromeDriver(); 
-		  
+		  driver.manage().window().maximize();
 		  driver.get("https://opensource-demo.orangehrmlive.com/");
 		  
 		  

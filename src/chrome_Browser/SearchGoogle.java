@@ -12,7 +12,9 @@ public class SearchGoogle {
 		System.setProperty("webdriver.chrome.driver","E:\\Testing\\AUTOMATION\\chromedriver_win32\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com");
-		
+		Thread.sleep(2000);
+		driver.getMouse();
+		Thread.sleep(2000);
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
