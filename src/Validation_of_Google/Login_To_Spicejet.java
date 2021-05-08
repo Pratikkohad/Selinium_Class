@@ -1,4 +1,4 @@
-package spice_Jet_Project;
+package Validation_of_Google;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

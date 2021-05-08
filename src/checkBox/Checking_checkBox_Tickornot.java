@@ -28,8 +28,11 @@ public class Checking_checkBox_Tickornot
 		Admin.click();
 
 		WebElement checkbox =
-		driver.findElement(By.id("ohrmList_chkSelectRecord_74"));
-	   checkbox.click();
+		driver.findElement(By.id("ohrmList_chkSelectRecord_10"));
+	  
+		//checkbox.click();
+		boolean abcd = checkbox.isSelected();
+		System.out.println(abcd);
 	    if (checkbox.isSelected()) 
 	   {
 		   System.out.println("Checkbox is ON");

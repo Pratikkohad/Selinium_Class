@@ -2,6 +2,7 @@ package chrome_Browser;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Yahoo_login {
@@ -15,9 +16,18 @@ public class Yahoo_login {
 		driver.get("https://login.yahoo.com/");
 		
 		driver.findElement(By.id("login-username")).sendKeys("ankit.007@yahoo.com");
-		driver.findElement(By.id("login-signin")).click();
+
+		WebElement checkbox =
+		driver.findElement(By.xpath("///*[@id=\"persistent\"]"));
+	   checkbox.click();
+	   
+	   boolean abcd = checkbox.isSelected();
+		System.out.println(abcd);
 		
+		driver.findElement(By.id("login-signin")).click();
 		Thread.sleep(2000);
+		
 		driver.findElement(By.xpath("//*[@id='login-passwd']")).sendKeys("Pratik@1234");
+		driver.findElement(By.id("login-signin")).click();
 }
 }

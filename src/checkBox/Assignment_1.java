@@ -13,7 +13,8 @@ public class Assignment_1 {
 	public static void main(String[] args) throws Throwable {
 		System.setProperty("webdriver.chrome.driver", "E:\\Testing\\AUTOMATION\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
-
+		driver.manage().window().maximize();
+		
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 
 		WebElement username = driver.findElement(By.xpath("//*[@id=\"txtUsername\"] "));
@@ -31,16 +32,12 @@ public class Assignment_1 {
 		List<WebElement> selectall = driver.findElements(By.xpath("//*[contains(@id,'ohrmList_chkSelectRecord_')]"));
 		int count = selectall.size();
 		System.out.println("Total Number  :-" + count);
-
-		for (WebElement check : selectall)
+		for (int i = 0; i < selectall.size(); i = i + 2) 
 		{
-			for(int i=0;i<selectall.size()	 ;i++)
-			{
-			check.click();
-			i++;
-			}
+			selectall.get(i).click();
 		}
-		Thread.sleep(2000);
-		driver.quit();
+
+//		Thread.sleep(2000);
+//		driver.quit();
 	}
 }
