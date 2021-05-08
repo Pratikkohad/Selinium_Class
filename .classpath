@@ -10,6 +10,5 @@
 	<classpathentry kind="lib" path="E:/Testing/AUTOMATION/selenium-java-3.141.59/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="E:/Testing/AUTOMATION/selenium-java-3.141.59/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="E:/Testing/AUTOMATION/com.mysql.jdbc_5.1.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/prati/OneDrive/Desktop/mysql-connector.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
