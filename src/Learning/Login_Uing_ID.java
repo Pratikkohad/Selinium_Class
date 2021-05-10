@@ -32,6 +32,12 @@ public class Login_Uing_ID {
 		driver.findElement(By.name("txtPassword")).sendKeys("admin123");
 		driver.findElement(By.id("btnLogin")).submit();
 		
+		driver.findElement(By.id("welcome")).click();  
+	
+		
+		
+		Thread.sleep(2000);
+		driver.close();
 	}
 
 }
